@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #000000;
     background-color: #FFFFFF;
@@ -11,11 +11,12 @@ body {
 .navigation {
     background-color: #4A46EE;
     display: flex;
-    justify-content: space-between;
+    gap: 65px;
     margin-bottom: 45px;
 }
 
 .nav-list {
+    width: 364px;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -28,9 +29,12 @@ body {
     font-size: 16px;
     text-decoration: none;
     color: #FFFFFF;
-    padding: 41px 15px;
+    padding: 0 15px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     justify-content: center;
     align-items: center;
+    border-radius: 0 0 20% 20%;
 }
 
 .nav-list a:hover {
@@ -38,9 +42,8 @@ body {
 }
 
 .logo {
-    justify-self: end;
-    align-self: center;
-    height: 90px;
+    margin: 32px 0;
+    margin-left: 16%;
 }
 
 .info-article {
@@ -74,31 +77,50 @@ body {
 .hero h1 {
     display: block;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: normal;
-    margin-top: 40px;
+    padding-top: 40px;
     margin-bottom: 205px;
 }
 
+.hero-wrapper {
+    max-width: 350px;
+    margin-right: 50px;
+    margin-left: auto;
+    padding-bottom: 181px;
+}
+
 .hero-wrapper p {
-    margin-bottom: 181px;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .hero-button {
     display: block;
+    max-width: 170px;
     font-size: 16px;
     text-decoration: none;
     color: #FFFFFF;
     background-color: #4690FF;
-    width: 170px;
-    height: 35px;
+    padding: 9px 13px;
     text-align: center;
+    margin: 0 auto;
     border-radius: 30px;
-    border:#000000 1px solid;
+    border:rgb(15, 11, 31) 0.5px solid;
+    margin-bottom: 49px;
+}
+
+.hero-button:hover {
+    background-color: #4A46EE;
 }
 
 .hero-wrapper h3 {
-    margin-bottom: 181px;
+    font-size: 16px;
+    width: 120px;
+    display: block;
+    font-weight: normal;
+    margin: 0 auto;
 }
 
 .social-media {
@@ -106,6 +128,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
 }
