@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 .navigation {
     background-color: #4A46EE;
     display: flex;
@@ -130,4 +135,50 @@ body {
     padding: 0;
     margin: 0 auto;
     list-style: none;
+}
+
+.catalog-content h1 {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 91px 0;
+}
+
+.catalog {
+    padding: 0;
+    margin: 0 14.6%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+.catalog-item {
+    width: 390px;
+    background: #ADADAD;
+    border-radius: 12px;
+    border: 5px solid #000;
+}
+
+.catalog-item:hover {
+    border: 5px solid rgba(71, 142, 226, 0.92);
+}
+
+.catalog-item h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.catalog-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.catalog-item p {
+    text-align: center;
+    margin: 0;
 }
