@@ -185,3 +185,29 @@ header {
     text-align: center;
     margin: 0;
 }
+
+.course-navigation-container {
+    max-width: 266px;
+    border:rgb(15, 11, 31) 1px solid;
+}
+
+.course-navigation-container h1 {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin: 4px 15px 12px 15px;
+    border:rgb(15, 11, 31) 1px solid;
+}
+
+.course-navigation-container ol {
+    counter-reset: item;
+}
+
+.course-navigation li {
+    display: block;
+}
+
+.course-navigation li::before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+}
