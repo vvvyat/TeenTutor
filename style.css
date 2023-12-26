@@ -17,7 +17,6 @@ header {
     background-color: #4A46EE;
     display: flex;
     gap: 65px;
-    margin-bottom: 45px;
 }
 
 .nav-list {
@@ -49,6 +48,10 @@ header {
 .logo {
     margin: 32px 0;
     margin-left: 16%;
+}
+
+.info {
+    margin-top: 45px;
 }
 
 .info-article {
