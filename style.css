@@ -20,7 +20,7 @@ header {
 }
 
 .nav-list {
-    width: 364px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -163,6 +163,7 @@ header {
     background: #ADADAD;
     border-radius: 12px;
     border: 5px solid #000;
+    cursor: pointer;
 }
 
 .catalog-item:hover {
@@ -187,20 +188,27 @@ header {
 }
 
 .course-navigation-container {
-    max-width: 266px;
-    border:rgb(15, 11, 31) 1px solid;
+    min-width: 175px;
+    width: 13.85%;
+    height: 100%;
+    border:#4A46EE 1px solid;
+    border-top: none;
+    margin-left: 9.2%;
 }
 
 .course-navigation-container h1 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     display: block;
-    margin: 4px 15px 12px 15px;
-    border:rgb(15, 11, 31) 1px solid;
+    padding: 4px 15px 6px 15px;
+    margin-bottom: 12px;
+    border-bottom:#4A46EE 1px solid;
 }
 
 .course-navigation-container ol {
     counter-reset: item;
+    margin: 0 3px;
+    padding: 0;
 }
 
 .course-navigation li {
@@ -210,4 +218,212 @@ header {
 .course-navigation li::before {
     content: counters(item, ".") " ";
     counter-increment: item;
+}
+
+.course-navigation-item {
+    padding-left: 43px;
+    padding-right: 13px;
+    background-color: #D9D9D9;
+    margin: 6px 0;
+    display: block;
+    cursor: pointer;
+}
+
+.course-navigation #internet-history {
+    background-color: #8FE998;
+}
+
+.hidden {
+    display: none;
+}
+
+.subject-courses ul {
+    margin: 0;
+    margin-top: 99px;
+    margin-bottom: 281px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+}
+
+.course-item {
+    cursor: pointer;
+    width: 56.875%;
+    min-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    gap: 27px;
+    background-color: #ADADAD;
+    border: #000000 5px solid;
+    border-radius: 12px;
+}
+
+.course-item:hover {
+    border: rgba(71, 142, 226, 0.92) 5px solid;
+}
+
+.course-item p {
+    font-size: 12px;
+    margin-right: 37px;
+}
+
+.course-item h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.course-item img {
+    display: block;
+    margin: 13px 0;
+    align-self: center;
+}
+
+#python h2, #js h2 {
+    width: 100%;
+    font-size: 48px;
+    align-self: center;
+    text-align: center;
+}
+
+.course-theme h2 {
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: #4A46EE 1px solid;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    padding-left: 9.2%;
+    margin-bottom: 42px;
+}
+
+.course-theme p {
+    margin-left: 9.2%;
+    margin-right: 28%;
+}
+
+.course-theme h3, .course-theme img, .course-theme ol {
+    margin-left: 9.2%;
+}
+
+.course-theme h3 {
+    font-size: 16px;
+}
+
+.course {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-themes-container {
+    width: 76.95%;
+}
+
+.course-preview-header {
+    background-color: #97C1E8;
+    padding: 0 21.6%;
+    padding-top: 33px;
+    display: flex;
+    gap: 7%;
+    margin-bottom: 20px;
+}
+
+.course-preview-header h1 {
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.course-preview-header img {
+    margin-top: 10px;
+}
+
+.course-preview {
+    font-size: 14px;
+}
+
+.course-preview h1, .course-preview h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.course-preview-header p {
+    margin: 0;
+    margin-bottom: 28px;
+}
+
+.course-preview h2 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.course-preview-content {
+    display: flex;
+    margin: 0 21.6%;
+    gap: 4.4%;
+    justify-content: space-between;
+}
+
+.course-preview li {
+    margin: 13px 0;
+}
+
+.course-preview span {
+    font-size: 18px;
+}
+
+.checked-list {
+    list-style-image: url('img/green-checkmark.png');
+}
+
+.course-program {
+    padding: 0;
+    list-style: none;
+}
+
+.start-section {
+    width: 10.5%;
+    min-width: 160px;
+}
+
+.start-section a {
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    padding: 12px 0;
+    display: block;
+    background-color: #33DB2F;
+    border-radius: 12px;
+}
+
+.start-section a:hover {
+    background-color: #32A830;
+}
+
+.start-message {
+    margin-top: 13px;
+    margin-bottom: 140px;
+}
+
+.start-section p {
+    text-align: center;
+}
+
+.next-theme-button {
+    width: 20%;
+    text-align: center;
+    margin-right: 28%;
+    margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 55px;
+    padding: 8px 0;
+    display: block;
+    background-color: #33DB2F;
+    border-radius: 12px; 
+    cursor: pointer;
+}
+
+.next-theme-button:hover {
+    background-color: #32A830; 
 }
