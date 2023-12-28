@@ -19,31 +19,131 @@
           <li class="nav-list-item">
             <a href="#">О нас</a>
           </li>
-          <li class="nav-list-item">
-            <a href="#">Мой прогресс</a>
-          </li>
         </ul>
       </nav>
     </header>
     <main class="catalog-content">
+      <div class="subjects-list-container">
         <h1>Предметы</h1>
         <ul class="catalog">
-            <li class="catalog-item">
+            <li class="catalog-item" id="it-courses">
                 <h2>Информатика</h2>
                 <img src="img/it.svg" alt="Информатика" width="170" height="170">
                 <p>Количество курсов: <span class="courses-cnt">0</span></p>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" id="math-courses">
                 <h2>Математика</h2>
-                <img src="img/math.svg" alt="Информатика" width="170" height="170">
+                <img src="img/math.svg" alt="Математика" width="170" height="170">
                 <p>Количество курсов: <span class="courses-cnt">0</span></p>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" id="russian-lang-courses">
                 <h2>Русский язык</h2>
-                <img src="img/russian-lang.svg" alt="Информатика" width="170" height="170">
+                <img src="img/russian-lang.svg" alt="Русский язык" width="170" height="170">
                 <p>Количество курсов: <span class="courses-cnt">0</span></p>
             </li>
         </ul>
+      </div>
+      <div class="subject-courses-container">
+        <div id="it-courses" class="subject-courses hidden">
+          <ul>
+            <li class="course-item" id="html-css">
+              <img src="img/html-css-icon.svg" height="160" width="160" alt="html/css icon">
+              <div>  
+                <h2>Веб-дизайн и разработка сайта</h2>
+                <p>Курс "Веб-дизайн и разработка сайта" создан для учащихся 9 классов и всех желающих научиться создавать сайты с помощью HTML и CSS. Курс научит создавать простые сайты и размещать их в сети интернет. Курс создан с учетом современных тенденций в образовании. В качестве заданий выступают тесты и практические работы. Для учащихся средней и старшей школы курс будет полезен для дальнейшей сдачи ОГЭ и ЕГЭ, а так же для определения с будущей профессией.</p>
+                <p>Прохождение курса займет: ≈ 1 час</p>
+              </div>
+              </li>
+            <li class="course-item" id="python">
+              <img src="img/python-icon.svg" height="160" width="160" alt="python icon">
+              <h2>Скоро будет...</h2>
+            </li>
+            <li class="course-item" id="js">
+              <img src="img/js-icon.svg" height="160" width="160" alt="js icon">
+              <h2>Скоро будет...</h2>
+            </li>
+          </ul>
+        </div>
+        <div id="math-courses" class="subject-courses hidden">
+          <h1>Курсов по этому предмету нет</h1>
+        </div>
+        <div id="russian-lang-courses" class="subject-courses hidden">
+          <h1>Курсов по этому предмету нет</h1>
+        </div>
+      </div>
+      <div class="courses-preview-container">
+        <div id="html-css" class="course-preview hidden">
+          <div class="course-preview-header">
+            <div>
+              <h1>Веб-дизайн и разработка сайта</h1>
+              <p>Курс "Веб-дизайн и разработка сайта" создан для учащихся 9 классов и всех желающих научиться создавать сайты с помощью HTML и CSS. Курс научит создавать простые сайты и размещать их в сети интернет. Курс создан с учетом современных тенденций в образовании. В качестве заданий выступают тесты и практические работы. Для учащихся средней и старшей школы курс будет полезен для дальнейшей сдачи ОГЭ и ЕГЭ, а так же для определения с будущей профессией.</p>
+              <p>Прохождение курса займет: ≈ 1 час</p>
+            </div>
+            <img src="img/html-css-icon.svg" height="160" width="160" alt="html/css icon">
+          </div>
+          <div class="course-preview-content">
+            <div>
+              <h2>Чему вы научитесь</h2>
+              <ul class="checked-list">
+                <li>На данном курсе узнаете историю создания интернета и как он работает. Что такое IP-адреса и для чего они нужны.</li>
+                <li>Так же Вы научитесь азам HTML-вёрстки, дизайн - оформлению с помощью CSS.</li>
+              </ul>
+              <h2>Для кого этот курс</h2>
+              <p>Для учащихся 9 классов и старшей школы</p>
+              <h2>Программа курса</h2>
+              <ul class="course-program">
+                <li>
+                  <span>Всемирная компьютерная сеть</span>
+                  <ol>
+                    <li>История создания интернета</li>
+                    <li>IP-адрес</li>
+                    <li>Доменная система имен (DNS)</li>
+                  </ol>
+                </li>
+                <li>
+                  <span>Основы HTML</span>
+                  <ol>
+                    <li>Всемирная паутина</li>
+                    <li>HTML</li>
+                    <li>Структура HTML документа</li>
+                    <li>Разметка текста в коде - HTML</li>
+                    <li>Списки HTML</li>
+                    <li>Ссылки HTML</li>
+                    <li>Таблицы в HTML</li>
+                    <li>Изображение в HTML</li>
+                  </ol>
+                </li>
+                <li>
+                  <span>Основы CSS</span>
+                  <ol>
+                    <li>История CSS</li>
+                    <li>CSS - элементы. Изображение и текст.</li>
+                    <li>Присоединение CSS к HTML-документу</li>
+                  </ol>
+                </li>
+              </ul>
+              <h2>Что вы получаете</h2>
+              <ul class="checked-list">
+                <li>Знание основ языка HTML</li>
+                <li>Навыки HTML-вёрстки</li>
+                <li>Знания основ CSS</li>
+              </ul>
+            </div>
+            <div class="start-section">
+              <a href="html-course.html">Начать</a>
+              <p class="start-message"><span>Учиться можно сразу</span></p>
+              <p>В курс входит<br>14 уроков<br>12 тестов</p>
+            </div>
+          </div>
+        </div>
+        <div id="python" class="course-preview hidden">
+          <h1>Курс ещё не загружен</h1>
+        </div>
+        <div id="js" class="course-preview hidden">
+          <h1>Курс ещё не загружен</h1>
+        </div>
+      </div>
     </main>
+    <script src="catalog-navigation.js"></script>
   </body>
 </html>
