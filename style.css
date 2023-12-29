@@ -160,7 +160,7 @@ header {
 
 .catalog-item {
     width: 390px;
-    background: #ADADAD;
+    background: #D9D9D9;
     border-radius: 12px;
     border: 5px solid #000;
     cursor: pointer;
@@ -255,7 +255,7 @@ header {
     margin: 0 auto;
     display: flex;
     gap: 27px;
-    background-color: #ADADAD;
+    background-color: #D9D9D9;
     border: #000000 5px solid;
     border-radius: 12px;
 }
@@ -412,6 +412,7 @@ header {
 
 .next-theme-button {
     width: 20%;
+    min-width: 160px;
     text-align: center;
     margin-right: 28%;
     margin-left: auto;
@@ -426,4 +427,81 @@ header {
 
 .next-theme-button:hover {
     background-color: #32A830; 
+}
+
+.test-question {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.submit {
+    display: block;
+    background-color: #33DB2F;
+    padding: 9px 29px;
+    border: none;
+    border-radius: 9px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 16px 0;
+    cursor: pointer;
+    margin-left: 9.2%;
+    margin-right: 28%;
+    width: 140px;
+}
+
+.submit:hover {
+    background-color: #32A830;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+}
+
+input[type="radio"]:checked {
+    background: radial-gradient(#33DB2F, #e7e6e7);
+    border: 2px solid rgba(18, 16, 24, 0.8);
+}
+
+.test-container {
+    margin-left: 9.2%;
+    margin-right: 28%;
+    margin-top: 51px;
+    margin-bottom: 16px;
+}
+
+.test-container h4 {
+    font-size: 18px;
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+}
+
+.message p {
+    display: block;
+    margin: 0;
+    padding: 4px 0;
+}
+
+.message img {
+    display: block;
+    margin: 0;
+}
+
+.about img {
+    display: block;
+    margin: 0 auto;
+}
+
+.about div {
+    width: 56.9%;
+    margin: 0 auto;
+    margin-top: 51px;
 }
