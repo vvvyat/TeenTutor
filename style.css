@@ -9,8 +9,10 @@ body {
 }
 
 header {
+    height: 102px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navigation {
@@ -194,6 +196,9 @@ header {
     border:#4A46EE 1px solid;
     border-top: none;
     margin-left: 9.2%;
+    height: 100%;
+    position: sticky;
+    top: 102px;
 }
 
 .course-navigation-container h1 {
@@ -297,13 +302,14 @@ header {
     margin-bottom: 42px;
 }
 
-.course-theme p {
+.course-theme p, .course-theme h3, .course-theme img, .course-theme ol {
     margin-left: 9.2%;
     margin-right: 28%;
 }
 
-.course-theme h3, .course-theme img, .course-theme ol {
-    margin-left: 9.2%;
+.course-theme img {
+    max-width: 72%;
+    height: auto;
 }
 
 .course-theme h3 {
@@ -384,6 +390,9 @@ header {
 .start-section {
     width: 10.5%;
     min-width: 160px;
+    height: 100%;
+    position: sticky;
+    top: 124px;
 }
 
 .start-section a {
@@ -445,8 +454,6 @@ header {
     font-size: 16px;
     margin: 16px 0;
     cursor: pointer;
-    margin-left: 9.2%;
-    margin-right: 28%;
     width: 140px;
 }
 
@@ -498,6 +505,18 @@ input[type="radio"]:checked {
 .about img {
     display: block;
     margin: 0 auto;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about h1 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
 }
 
 .about div {
